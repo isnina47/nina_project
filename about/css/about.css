@@ -1,0 +1,121 @@
+@import url('reset.css');
+
+body {
+    background-color: #FFF4E5;
+}
+
+.pic img {
+    width: 100%;
+    background-position: center;
+}
+
+.wrapper {
+    margin-left: 75px;
+}
+
+.bread {
+    margin-top: 20px;
+    margin-left: 135px;
+    margin-bottom: 30px;
+}
+
+.bread ul {
+    display: inline-flex;
+}
+
+.bread ul img {
+    width: 10px;
+    height: 10px;
+}
+
+.bread li {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.bread li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.bread li>a:hover {
+    color: #A79277;
+}
+
+.wrapper h1 {
+    width: 130px;
+    height: 30px;
+    font-size: 32px;
+    border-top: #A79277 solid 4px;
+    padding-top: 20px;
+    /* 邊框跟文字的距離 */
+    border-bottom: #A79277 solid 4px;
+    padding-bottom: 20px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+section {
+    display: inline-flex;
+    align-items: center;
+
+}
+
+section>p:nth-child(1) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 300%;
+    padding: 10px 30px 30px 70px;
+}
+
+section>p:nth-child(2) {
+    /* about B p */
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 300%;
+    margin-left: 530px;
+    padding-top: 20px;
+}
+
+.aboutA>img {
+    aspect-ratio: 3 / 4;
+    /* 將圖片長寬維持固定的比例 */
+    width: 230px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 30px;
+}
+
+.aboutA {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+}
+
+.aboutB {
+    position: relative;
+    margin-bottom: 120px;
+}
+
+
+
+.aboutB .images {
+    margin-left: 70px;
+}
+
+.aboutB .images>img {
+    aspect-ratio: 3 / 4;
+    width: 220px;
+}
+
+.aboutB img:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    left: 70px;
+}
+
+.aboutB img:nth-child(2) {
+    position: absolute;
+    top: 160px;
+    right: 720px;
+}

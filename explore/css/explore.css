@@ -1,0 +1,235 @@
+@import url(reset.css);
+
+body {
+    background-color: #FFF4E5;
+}
+
+.out p {
+    line-height: 150%;
+}
+
+.bread {
+    /* 麵包屑 */
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+.bread ul {
+    display: inline-flex;
+}
+
+.bread ul img {
+    width: 10px;
+    height: 10px;
+}
+
+.bread li {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.bread li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.bread li>a:hover {
+    color: #A79277;
+}
+
+/* ---- title部分 ---- */
+.title {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 32px;
+    padding-bottom: 5px;
+}
+
+.title p {
+    font-size: 16px;
+}
+
+
+.title .border {
+    width: 63px;
+    border-top: #A79277 solid 3px;
+    margin-bottom: 10px;
+    margin-left: 47%;
+}
+
+/* 篩選部分 */
+
+.pickup {
+    border: 1px solid #D1BB9E;
+    margin: 20px 82px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.searchInput {
+    /* 搜尋欄位 */
+    border: 1px solid #A79277;
+    border-radius: 20px;
+    display: flex;
+
+}
+
+.filter_content {
+    border: none;
+    width: 20vw;
+}
+
+.searchInput input {
+    border: none;
+    width: 100%;
+    line-height: 5vh;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-left: 10px;
+    outline: none;
+    /* 去除input原本的外框線 */
+}
+
+/* 搜尋按鈕 */
+.searchInput button {
+    background-color: #A79277;
+    border: none;
+    width: 5vw;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.searchInput span {
+    color: #FFF4E5;
+    font-weight: 550;
+}
+
+.filter-item {
+    display: flex;
+    padding: 4px 20px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.filter_content,
+.filter_sublist {
+    margin-left: 30px;
+}
+
+.filter_sublist {
+    display: flex;
+}
+
+
+/* li部分 */
+.sub-item {
+    border: 1px solid #A79277;
+    border-radius: 20px;
+    color: #A79277;
+    width: 5vw;
+    line-height: 4vh;
+    text-align: center;
+    margin-right: 5px;
+}
+
+
+/* -- 老宅總覽 -- */
+.main img {
+    aspect-ratio: 1 / 1;
+    /* 將圖片長寬維持固定的比例 */
+    width: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 照片效果 */
+.house li {
+    margin: 30px 50px;
+    width: 300px;
+}
+
+.house {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.house h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.house p {
+    color: #8F8F8F;
+    font-size: 16px;
+    text-align: justify;
+    /* 文字左右對齊 */
+
+}
+
+.locaBtn {
+    display: flex;
+}
+
+.locaBtn p {
+    /* border: #A79277 1px solid; */
+    color: #D1BB9E;
+    padding-left: 5px;
+    /* border-radius: 40px; */
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+    /* margin-left: 5px; */
+}
+
+/* -- 了解更多a連結 -- */
+.main a {
+    color: black;
+    text-decoration: none;
+    background-color: #D1BB9E;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 40px;
+    display: block;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.main a:hover {
+    color: #FFF4E5;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.pagination li {
+    /* border: #A79277 solid 1px; */
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 2%;
+}
+
+.pagination li a {
+    color: black;
+    text-decoration: none;
+}
+
+.pagination li a:hover {
+    color: #A79277;
+}

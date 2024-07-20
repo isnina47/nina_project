@@ -1,0 +1,121 @@
+@import url('reset.css');
+
+body {
+    background-color: #FFF4E5;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.bread {
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+}
+
+.bread ul {
+    display: inline-flex;
+}
+
+.bread ul img {
+    width: 10px;
+    height: 10px;
+}
+
+.bread li {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.bread li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.bread li>a:hover {
+    color: #A79277;
+}
+
+.wrapper {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid blue; */
+}
+
+.title .border {
+    width: 110px;
+    border-top: #A79277 solid 4px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.title h1 {
+    height: 30px;
+    font-size: 32px;
+    margin-left: 70px;
+    margin-top: 50px;
+
+}
+
+#textONE p,
+#textTwo p {
+    width: 85%;
+    line-height: 200%;
+    padding: 30px 70px;
+    text-align: justify;
+    /* 文字左右對齊 */
+}
+
+.imgA {
+    margin-left: 70px;
+}
+
+.imgA img {
+    width: 500px;
+    margin-right: 10px;
+}
+
+.imgB img {
+    aspect-ratio: 3/4;
+    width: 350px;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 200px;
+    margin-bottom: 50px;
+}
+
+.imgB img:nth-child(1) {
+    clip-path: circle(65.3% at 50% 33%);
+}
+
+.imgB img:nth-child(2) {
+    clip-path: circle(65.3% at 49% 71%);
+    margin-left: 100px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    margin: 70px;
+}
+
+.time h2 {
+    font-size: 24px;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.time span {
+    line-height: 200%;
+}
+
+.map iframe {
+    width: 670px;
+    height: 300px;
+}

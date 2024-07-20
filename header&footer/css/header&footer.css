@@ -1,0 +1,79 @@
+@import url('reset.css');
+
+
+.header {
+    display: flex;
+    background-color: #A79277;
+    align-items: center;
+}
+
+.header a img,
+.logo a img {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+}
+
+.header ul {
+    display: flex;
+    width: 300px;
+    margin-left: 800px;
+}
+
+.header li {
+    flex-grow: 1;
+}
+
+.header li a {
+    text-decoration: none;
+    color: black;
+}
+
+.header li a:hover {
+    color: #FFF4E5;
+}
+
+
+/* --- footer --- */
+
+.footer {
+    display: flex;
+    background-color: #A79277;
+    align-items: center;
+    /* 置中對齊 */
+    justify-content: space-between;
+    /* 分散對齊 */
+}
+
+.footer p {
+    font-size: 12px;
+    color: black;
+}
+
+.footer .logo a img {
+    height: 50px;
+    width: 100px;
+    margin: 10px;
+}
+
+.follow {
+    margin-right: 50px;
+}
+
+.fwicon img:nth-child(1) {
+    width: 30px;
+}
+
+.fwicon img:nth-child(2) {
+    width: 36px;
+}
+
+.follow .fwtitle>p {
+    text-align: center;
+}
+
+.follow .fwicon a {
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}

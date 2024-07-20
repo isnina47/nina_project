@@ -1,0 +1,175 @@
+@import url(reset.css);
+
+body {
+    background-color: #FFF4E5;
+}
+
+.out p,
+.title {
+    line-height: 150%;
+}
+
+.bread {
+    /* 麵包屑 */
+    margin-top: 20px;
+    margin-left: 65px;
+}
+
+.bread ul {
+    display: inline-flex;
+}
+
+.bread ul img {
+    width: 10px;
+    height: 10px;
+}
+
+.bread li {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.bread li>a {
+    text-decoration: none;
+    color: black;
+}
+
+.bread li>a:hover {
+    color: #A79277;
+}
+
+/* ---- 屋的故事介紹部分 ---- */
+.title>p {
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.title>h1 {
+    font-size: 32px;
+    margin-left: 70px;
+}
+
+.title .border {
+    width: 110px;
+    border-top: #A79277 solid 4px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+/* ---- 文章部分 ---- */
+
+
+.content h2 {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.container {
+    /* border: 1px black solid; */
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container a {
+    transition: all 1s;
+}
+
+.container a:hover {
+    transform: scale(1.1);
+    color: white;
+}
+
+
+.container .img img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+    width: 300px;
+    box-shadow: 5px 5px 20px rgb(194, 194, 194);
+}
+
+.main,
+.main1,
+.main2,
+.main3,
+.main4 {
+    display: flex;
+    margin: 50px 70px;
+    align-items: center;
+}
+
+
+.main1,
+.main3 {
+    flex-flow: row-reverse;
+}
+
+.content {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.text {
+    width: 700px;
+    margin-top: 50px;
+}
+
+.title {
+    padding: 10px
+}
+
+.artical {
+    margin: 0 50px;
+}
+
+.content img {
+    width: 60px;
+    height: 60px;
+}
+
+.container h1 {
+    font-size: 20px;
+}
+
+.container p {
+    font-size: 16px;
+    color: #8F8F8F;
+}
+
+.text>a {
+    color: black;
+    text-decoration: none;
+    background-color: #D1BB9E;
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.pagination li {
+    /* border: #A79277 solid 1px; */
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 2%;
+}
+
+.pagination li a {
+    color: black;
+    text-decoration: none;
+}
+
+.pagination li a:hover {
+    color: #A79277;
+}
