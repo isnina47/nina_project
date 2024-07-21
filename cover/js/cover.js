@@ -9,11 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(() => {
         logo.style.opacity = 0;
-    }, 4500);
+    }, 3000);
 
-    // 7秒後跳轉到主頁
+
     setTimeout(() => {
-        window.location.href = "index.html";
-    }, 7000,);
+        loadingScreen.style.opacity = 0;
+        loadingScreen.style.pointerEvents = 'none';
+    }, 3000);
+
 });
+
 
