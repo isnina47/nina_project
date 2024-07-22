@@ -346,6 +346,10 @@ body {
 
     /* 關於&探索標題 */
 
+    /* 文創商品 */
+    .product {
+        justify-content: left;
+    }
 
     /* 屋の故事 */
 

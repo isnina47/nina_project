@@ -137,6 +137,13 @@ body {
     line-height: 4vh;
     text-align: center;
     margin-right: 5px;
+    cursor: pointer;
+}
+
+/* 被選中的樣式 */
+.selected {
+    background-color: #A79277;
+    color: white;
 }
 
 
