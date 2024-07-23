@@ -24,6 +24,19 @@
             display: none;
         }
     </style>
+    <!-- 中文標題&選單字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kaisei+Opti&display=swap"
+        rel="stylesheet">
+    <!-- 英文字體 Zen Old -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+    <!-- 中文副標&內文 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -181,8 +194,10 @@
             </div>
         </div>
     </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // 在整個 html 完全讀取和解析後就會被觸發，不需等待網頁資源讀取完成。
             const coverFrame = document.getElementById('cover-frame');
 
             // 檢查是否已經看過畫面

@@ -20,13 +20,14 @@ body {
 }
 
 .bread li {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
 }
 
 .bread li>a {
     text-decoration: none;
     color: black;
+    font-family: "Noto Serif TC", serif;
 }
 
 .bread li>a:hover {
@@ -38,6 +39,12 @@ body {
     width: 1200px;
     margin: 0 auto;
     /* border: 1px solid blue; */
+}
+
+.container h1,
+.container span,
+.container p {
+    font-family: "Noto Serif TC", serif;
 }
 
 .top img {
@@ -145,7 +152,6 @@ body {
     margin-left: 100px;
     margin-top: 50px;
     display: inline-flex;
-
 }
 
 .infoOne {
@@ -153,7 +159,7 @@ body {
 }
 
 .info span {
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .infoOne p,

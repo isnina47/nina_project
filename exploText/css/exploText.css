@@ -24,8 +24,9 @@ body {
 }
 
 .bread li {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
+    font-family: "Noto Serif TC", serif;
 }
 
 .bread li>a {
@@ -44,6 +45,12 @@ body {
     /* border: 1px solid blue; */
 }
 
+.wrapper p,
+.wrapper span,
+.wrapper h2 {
+    font-family: "Noto Serif TC", serif;
+}
+
 .title .border {
     width: 110px;
     border-top: #A79277 solid 4px;
@@ -57,7 +64,7 @@ body {
     font-size: 32px;
     margin-left: 70px;
     margin-top: 50px;
-
+    font-family: "Dela Gothic One", sans-serif;
 }
 
 #textONE p,

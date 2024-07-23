@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // 在整個document(html)完全讀取和解析後就會被觸發，不需等待網頁資源讀取完成。
     const areaOptions = document.querySelectorAll('#area-options .sub-item');
     const cityOptions = document.querySelectorAll('#city-options .sub-item');
     const houseList = document.querySelectorAll('.house li');
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateCityOptions(region) {
         cityOptions.forEach(option => {
+            // 
             if (option.getAttribute('data-region') === region || region === null) {
                 option.style.display = 'list-item';
             } else {

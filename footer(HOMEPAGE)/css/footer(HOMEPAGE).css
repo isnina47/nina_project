@@ -15,6 +15,7 @@
 .footer p {
     font-size: 12px;
     color: black;
+    font-family: "Noto Serif TC", serif;
 }
 
 .footer .logo a img {
@@ -43,4 +44,13 @@
     display: flex;
     justify-content: center;
     gap: 6%;
+}
+
+
+
+/* RWD */
+@media screen and (max-width: 820px) {
+    .follow {
+        margin-right: 25px;
+    }
 }

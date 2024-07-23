@@ -8,6 +8,12 @@ body {
     line-height: 150%;
 }
 
+.out p,
+.out span,
+.button button {
+    font-family: "Noto Serif TC", serif;
+}
+
 .bread {
     /* 麵包屑 */
     margin-top: 20px;
@@ -24,8 +30,9 @@ body {
 }
 
 .bread li {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
+    font-family: "Noto Serif TC", serif;
 }
 
 .bread li>a {
@@ -46,6 +53,7 @@ body {
 .title>h1 {
     font-size: 32px;
     margin-left: 72px;
+    font-family: "Dela Gothic One", sans-serif;
 }
 
 .title .border {

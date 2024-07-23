@@ -29,13 +29,14 @@ body {
 }
 
 .bread li {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
 }
 
 .bread li>a {
     text-decoration: none;
     color: black;
+    font-family: "Noto Serif TC", serif;
 }
 
 .bread li>a:hover {
@@ -46,13 +47,16 @@ body {
     width: 130px;
     height: 30px;
     font-size: 32px;
-    border-top: #A79277 solid 4px;
-    padding-top: 20px;
     /* 邊框跟文字的距離 */
     border-bottom: #A79277 solid 4px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     margin-left: 70px;
     margin-top: 50px;
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+.wrapper p {
+    font-family: "Noto Serif TC", serif;
 }
 
 section {

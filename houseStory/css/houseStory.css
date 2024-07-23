@@ -9,6 +9,13 @@ body {
     line-height: 150%;
 }
 
+.out p,
+.out span,
+.out h2,
+.out a {
+    font-family: "Noto Serif TC", serif;
+}
+
 .bread {
     /* 麵包屑 */
     margin-top: 20px;
@@ -25,8 +32,9 @@ body {
 }
 
 .bread li {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
+    font-family: "Noto Serif TC", serif;
 }
 
 .bread li>a {
@@ -39,14 +47,15 @@ body {
 }
 
 /* ---- 屋的故事介紹部分 ---- */
-.title>p {
-    margin-left: 70px;
-    margin-top: 20px;
-}
-
 .title>h1 {
     font-size: 32px;
     margin-left: 70px;
+    font-family: "Dela Gothic One", sans-serif;
+}
+
+.title>p {
+    margin-left: 70px;
+    margin-top: 20px;
 }
 
 .title .border {
@@ -144,7 +153,7 @@ body {
     background-color: #D1BB9E;
     display: block;
     width: 100px;
-    height: 30px;
+    height: 32px;
     line-height: 30px;
     border-radius: 40px;
     text-align: center;

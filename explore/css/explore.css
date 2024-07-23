@@ -6,6 +6,13 @@ body {
 
 .out p {
     line-height: 150%;
+    font-family: "Noto Serif TC", serif;
+}
+
+.out span,
+.out h2,
+.out a {
+    font-family: "Noto Serif TC", serif;
 }
 
 .bread {
@@ -24,8 +31,9 @@ body {
 }
 
 .bread li {
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
+    font-family: "Noto Serif TC", serif;
 }
 
 .bread li>a {
@@ -45,7 +53,8 @@ body {
 
 .title h1 {
     font-size: 32px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-family: "Dela Gothic One", sans-serif;
 }
 
 .title p {
@@ -206,7 +215,7 @@ body {
     text-decoration: none;
     background-color: #D1BB9E;
     width: 120px;
-    height: 30px;
+    height: 32px;
     line-height: 30px;
     border-radius: 40px;
     display: block;
