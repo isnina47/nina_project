@@ -72,14 +72,20 @@ body {
 }
 
 .button button {
-    border: none;
-    background-color: #D1BB9E;
-    color: white;
+    border: 1px solid #A79277;
+    color: #A79277;
+    background-color: #FFF4E5;
     border-radius: 24px;
     line-height: 4vh;
     width: 5vw;
     font-size: 14px;
     margin-right: 10px;
+    cursor: pointer;
+}
+
+button.selected {
+    background-color: #A79277;
+    color: white;
 }
 
 /* -- 商品總覽 -- */

@@ -127,9 +127,60 @@ section>p:nth-child(2) {
 
 /*   RWD   */
 
-@media screen and (max-width: 820px) {}
+@media(max-width: 820px) {
+    .bread {
+        margin-left: 15px
+    }
 
-@media screen and (max-width: 430px) {
+    .wrapper {
+        margin-left: 0px;
+    }
+
+    .wrapper h1 {
+        margin-left: 25px;
+        margin-top: 0;
+
+    }
+
+    .aboutA {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .aboutA>img {
+        margin-left: 0;
+    }
+
+    section>p:nth-child(1) {
+        padding: 0 10px 0 25px;
+    }
+
+    section>p:nth-child(2) {
+        margin-left: 300px;
+    }
+
+    .aboutB {
+        margin-bottom: 50px;
+    }
+
+    .aboutB .images>img {
+        width: 160px;
+    }
+
+    .aboutB img:nth-child(1) {
+        position: absolute;
+        left: 20px;
+        top: 35px;
+    }
+
+    .aboutB img:nth-child(2) {
+        position: absolute;
+        right: 520px;
+        top: 176px;
+    }
+}
+
+@media(max-width: 430px) {
     .wrapper {
         margin: 0px;
     }

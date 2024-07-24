@@ -81,7 +81,7 @@ body {
 }
 
 .container a {
-    transition: all 1s;
+    transition: all .5s;
 }
 
 .container a:hover {

@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
     <link rel="stylesheet" href="./index/css/index.css">
     <link rel="stylesheet" href="./footer(HOMEPAGE)/css/footer(HOMEPAGE).css">
@@ -56,6 +58,12 @@
             <li><a href="houseStory.html">屋の故事</a></li>
             <li><a href="product.html">文創商品</a></li>
         </ul>
+    </div>
+
+    <div class="menu">
+        <button class="menu" aria-haspopup="true" aria-expanded="false">
+            <span>Menu</span>
+        </button>
     </div>
 
     <div class="wrapper">
@@ -195,6 +203,10 @@
         </div>
     </div>
 
+    <picture>
+        <source srcset="homepage.jpg" media="(max-width: 430px)">
+    </picture>
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             // 在整個 html 完全讀取和解析後就會被觸發，不需等待網頁資源讀取完成。
@@ -213,6 +225,8 @@
             }
         });
     </script>
+
+
 </body>
 
 </html>
