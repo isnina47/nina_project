@@ -66,23 +66,6 @@ body {
     margin: 50px auto;
 }
 
-/* RWD 430px 顯示的menu */
-
-.menu button {
-    border: none;
-    color: white;
-    font-weight: bold;
-    background-color: #D1BB9E;
-    border-radius: 20px;
-    width: 80px;
-    height: 35px;
-    font-size: 16px;
-    font-family: "Noto Serif TC", serif;
-    position: absolute;
-    right: 5%;
-    top: 5%;
-
-}
 
 /* 副標&內容 */
 .wrapper p,
@@ -358,9 +341,6 @@ body {
 /* RWD part */
 
 @media(max-width: 820px) {
-    .wrapper {
-        /* width: 100%; */
-    }
 
     /* logo */
     .top a img:nth-child(1) {
@@ -446,7 +426,7 @@ body {
 
     /* ToTop按鈕 */
     #top {
-        bottom: 15%;
+        bottom: 9%;
         right: 1%;
     }
 }
@@ -457,10 +437,129 @@ body {
         left: 10px;
     }
 
+    /* 右方選單 */
+    .top li {
+        margin-bottom: 15px;
+        font-size: 18px;
+        border-bottom: 2px solid #A79277;
+    }
+
+    /* 英文字 */
     .top>h1 {
-        font-size: 16px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    .wrapper h2 {
+        font-size: 24px;
+    }
+
+    /* 關於屋裡 */
+    .about {
+        margin: 0 15px;
+    }
+
+    .aboutTitle h2 {
+        text-align: center;
+    }
+
+    .aboutTitle p {
+        padding-left: 10px;
+    }
+
+    .aboutTitle a {
+        margin-top: 20px;
+        margin-left: 250px;
+    }
+
+    .img img {
+        display: none;
     }
 
     /* 屋裡探索 */
+
+    .title a {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .explore a {
+        display: block;
+    }
+
+    .explore h3 {
+        text-align: center;
+        padding-top: 10px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .about a,
+    .story a,
+    .wrapper p {
+        font-size: 14px;
+    }
+
+    /* 屋的故事 */
+    .storyContent {
+        display: block;
+    }
+
+    .story {
+        width: 80%;
+        justify-content: center;
+        margin-left: 40px;
+    }
+
+    .story a {
+        margin-left: 220px;
+        margin-top: 5px;
+    }
+
+    .photo img {
+        margin-left: 20px;
+        width: 350px;
+    }
+
+    /* 文創商品 */
+
+    .productTitle p {
+        text-align: justify;
+        width: 80%;
+        font-size: 14px;
+        margin-left: 40px;
+    }
+
+    .pro ul {
+        display: block;
+        width: 55%;
+        margin-left: 86px;
+    }
+
+    .pro li {
+        margin-left: 0px;
+        /* border: #A79277 solid; */
+        margin: 20px 0;
+    }
+
+    .pro span {
+        font-size: 14px;
+    }
+
+    .a>a {
+        margin-left: 183px;
+        font-size: 14px;
+    }
+
+    .pro p {
+        width: 50%;
+    }
+
+    #top {
+        right: 10px;
+        padding: 0 8px;
+    }
 
 }

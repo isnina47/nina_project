@@ -56,7 +56,30 @@
 }
 
 @media(max-width: 430px) {
-    .follow .text {
+    .footer .logo a img {
+        width: 80px;
+        height: 50px;
+    }
+
+    .footer .text {
         font-size: 8px;
+        padding: 8px 0;
+    }
+
+    .follow {
+        margin-right: 10px;
+    }
+
+    .follow p {
+        display: none;
+    }
+
+    .fwicon img:nth-child(1) {
+        width: 35px;
+        margin-left: 15px;
+    }
+
+    .fwicon img:nth-child(2) {
+        width: 40px;
     }
 }

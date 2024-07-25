@@ -38,6 +38,66 @@ body {
     color: #A79277;
 }
 
+/* 漢堡選單 */
+.hamburger {
+    display: none;
+}
+
+#hamburgerMenu {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+
+#hamburgerMenu .bar {
+    width: 36px;
+    height: 6px;
+    background-color: #FFF4E5;
+    margin: 6px auto;
+    border-radius: 2px;
+}
+
+.ham-pull-menu {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+}
+
+.transition {
+    transition: 0.8s;
+}
+
+.hamburger ul {
+    opacity: 0;
+}
+
+.hamburger.active ul {
+    opacity: 1;
+    background-color: rgba(239, 223, 195, 0.95);
+}
+
+.hamburger.active .bar1 {
+    transform: rotate(-45deg) translate(-9px, 7px);
+}
+
+.hamburger.active .bar2 {
+    opacity: 0;
+}
+
+.hamburger.active .bar3 {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.ham-pull-menu li {
+    padding: 15px;
+}
+
+.ham-pull-menu a {
+    text-decoration: none;
+    color: #A79277;
+    font-family: "Dela Gothic One", sans-serif;
+}
+
 .wrapper {
     display: block;
     width: 1200px;
@@ -125,4 +185,12 @@ body {
 .map iframe {
     width: 670px;
     height: 300px;
+}
+
+
+
+@media(max-width: 430px) {
+    .hamburger {
+        display: block;
+    }
 }
