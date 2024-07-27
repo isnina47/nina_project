@@ -25,10 +25,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (matchesRegion && matchesCity) {
                 house.style.display = 'list-item';
+                console.log('if')
             } else {
                 house.style.display = 'none';
+                console.log('else')
             }
+
         });
+
     }
 
     function clearSelected(options) {

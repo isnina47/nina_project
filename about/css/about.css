@@ -39,11 +39,11 @@ body {
 }
 
 .hamburger ul {
-    opacity: 0;
+    display: none;
 }
 
 .hamburger.active ul {
-    opacity: 1;
+    display: block;
     background-color: rgba(239, 223, 195, 0.95);
 }
 
@@ -187,6 +187,23 @@ section>p:nth-child(2) {
     right: 720px;
 }
 
+#top {
+    color: white;
+    background-color: #D1BB9E;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    position: fixed;
+    bottom: 15%;
+    right: 1%;
+    border: none;
+    font-family: "Noto Serif TC", serif;
+}
 
 /*   RWD   */
 
@@ -304,4 +321,9 @@ section>p:nth-child(2) {
         display: none;
     }
 
+    #top {
+        right: 10px;
+        padding: 0 8px;
+        bottom: 11%;
+    }
 }

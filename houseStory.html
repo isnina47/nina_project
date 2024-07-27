@@ -28,6 +28,24 @@
         });
     </script>
 
+    <script>
+        // back to top 按鈕
+        $(function () {
+            $('#top').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 333);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 800) {
+                    // 螢幕往下拉超過800px顯示top按鈕
+                    $('#top').fadeIn(555);
+                } else {
+                    $('#top').stop().fadeOut(0);
+                    // 回到最上方按鈕即消失
+                }
+            }).scroll();
+        });
+    </script>
+
 </head>
 
 <body>
@@ -51,10 +69,18 @@
         </div>
         <div class="ham-pull-menu">
             <ul class="transition">
-                <li><a href="about.html">關於屋裡</a></li>
-                <li><a href="explore.html">屋裡探索</a></li>
-                <li><a href="houseStory.html">屋の故事</a></li>
-                <li><a href="product.html">文創商品</a></li>
+                <a href="about.html">
+                    <li>關於屋裡</li>
+                </a>
+                <a href="explore.html">
+                    <li>屋裡探索</li>
+                </a>
+                <a href="houseStory.html">
+                    <li>屋の故事</li>
+                </a>
+                <a href="product.html">
+                    <li>文創商品</li>
+                </a>
             </ul>
         </div>
     </div>
@@ -212,6 +238,10 @@
                 <li><a href="#">4</a></li>
                 <li><a href="#"><img src="./pics/next.svg" alt=""></a></li>
             </ul>
+        </div>
+
+        <div class="toTop">
+            <button id="top">Top↑</button>
         </div>
 
         <div class="footer">

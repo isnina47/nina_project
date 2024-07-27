@@ -39,6 +39,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
+    <!-- 漢堡選單 -->
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').click(function () {
+                $(this).toggleClass('active')
+            })
+
+        });
+    </script>
 </head>
 
 <body>
@@ -56,6 +65,32 @@
             <li><a href="houseStory.html">屋の故事</a></li>
             <li><a href="product.html">文創商品</a></li>
         </ul>
+    </div>
+
+    <div class="hamburger">
+        <div id="hamburgerMenu">
+            <div class="menu transition">
+                <div class="bar bar1 transition"></div>
+                <div class="bar bar2 transition"></div>
+                <div class="bar bar3 transition"></div>
+            </div>
+        </div>
+        <div class="ham-pull-menu">
+            <ul class="transition">
+                <a href="about.html">
+                    <li>關於屋裡</li>
+                </a>
+                <a href="explore.html">
+                    <li>屋裡探索</li>
+                </a>
+                <a href="houseStory.html">
+                    <li>屋の故事</li>
+                </a>
+                <a href="product.html">
+                    <li>文創商品</li>
+                </a>
+            </ul>
+        </div>
     </div>
 
     <div class="wrapper">

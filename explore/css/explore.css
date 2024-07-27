@@ -39,11 +39,11 @@ body {
 }
 
 .hamburger ul {
-    opacity: 0;
+    display: none;
 }
 
 .hamburger.active ul {
-    opacity: 1;
+    display: block;
     background-color: rgba(239, 223, 195, 0.95);
 }
 
@@ -196,7 +196,6 @@ body {
     display: flex;
 }
 
-
 /* li部分 */
 .sub-item {
     border: 1px solid #A79277;
@@ -310,6 +309,24 @@ body {
     color: #A79277;
 }
 
+#top {
+    color: white;
+    background-color: #D1BB9E;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    display: block;
+    text-align: center;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    position: fixed;
+    bottom: 15%;
+    right: 1%;
+    border: none;
+    font-family: "Noto Serif TC", serif;
+}
+
 /* RWD */
 @media(max-width: 820px) {
     .searchInput button {
@@ -322,6 +339,7 @@ body {
 
     .sub-item {
         width: 8vw;
+        line-height: 4vh;
     }
 
     .house {
@@ -348,6 +366,8 @@ body {
 
     .title p {
         font-size: 14px;
+        padding: 0 25px;
+        text-align: justify;
     }
 
     /* 漢堡選單 */
@@ -384,6 +404,8 @@ body {
     .sub-item {
         width: 10vw;
         margin-right: 3px;
+        line-height: 4vh;
+        border-radius: 10px;
     }
 
     .searchInput span {
@@ -414,5 +436,10 @@ body {
 
     .pagination li {
         width: 4%;
+    }
+
+    #top {
+        right: 10px;
+        padding: 0 8px;
     }
 }
