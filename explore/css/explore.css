@@ -65,14 +65,25 @@ body {
 
 .ham-pull-menu a {
     text-decoration: none;
-    color: #A79277;
+    color: #FFF4E5;
+    -webkit-text-stroke: 1px #A79277;
     font-family: "Dela Gothic One", sans-serif;
 }
 
 .out span,
 .out h2,
-.out a {
+.pagination a {
     font-family: "Noto Serif TC", serif;
+}
+
+.sub-item span {
+    font-family: "Dela Gothic One", sans-serif;
+
+}
+
+.a a {
+    font-family: "Dela Gothic One", sans-serif;
+
 }
 
 .bread {
@@ -145,7 +156,6 @@ body {
     border: 1px solid #A79277;
     border-radius: 20px;
     display: flex;
-
 }
 
 .filter_content {
@@ -173,6 +183,7 @@ body {
     border-radius: 20px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    cursor: pointer;
 }
 
 .searchInput span {
@@ -333,13 +344,17 @@ body {
         width: 7vw;
     }
 
+    .searchInput input {
+        line-height: 2.5vh;
+    }
+
     .filter_content {
         width: 24vw;
     }
 
     .sub-item {
-        width: 8vw;
-        line-height: 4vh;
+        width: 7vw;
+        line-height: 2vh;
     }
 
     .house {
@@ -373,6 +388,10 @@ body {
     /* 漢堡選單 */
     .hamburger {
         display: block;
+    }
+
+    .ham-pull-menu li {
+        font-size: 20px;
     }
 
     /* 搜尋區 */

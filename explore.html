@@ -8,7 +8,6 @@
     <title>屋裡探索</title>
     <link rel="stylesheet" href="./explore/css/explore.css">
     <link rel="stylesheet" href="./header&footer/css/header&footer.css">
-    <script src="./explore/js/explore.js"></script>
     <!-- 中文標題&選單字體 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,18 +25,17 @@
             $('.hamburger').click(function () {
                 $(this).toggleClass('active')
             })
-
         });
     </script>
     <!-- back to top 按鈕 -->
-    <!-- <script>
+    <script>
         $(function () {
             $('#top').click(function () {
                 $('html,body').animate({ scrollTop: 0 }, 333);
             });
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 800) {
-                    // 螢幕往下拉超過800px顯示top按鈕
+                if ($(this).scrollTop() > 900) {
+                    // 螢幕往下拉超過900px顯示top按鈕
                     $('#top').fadeIn(555);
                 } else {
                     $('#top').stop().fadeOut(0);
@@ -45,7 +43,8 @@
                 }
             }).scroll();
         });
-    </script> -->
+    </script>
+
 </head>
 
 
@@ -112,8 +111,9 @@
                     <span class="filter_title">屋裡探索</span>
                     <div class="filter_content">
                         <div class="searchInput">
-                            <input type="text" placeholder="搜尋關鍵字" style="font-family:Noto Serif TC, serif">
-                            <button><span>搜尋</span></button>
+                            <input type="text" id="search-input" placeholder="搜尋關鍵字"
+                                style="font-family:Noto Serif TC, serif">
+                            <button id="search-button"><span>搜尋</span></button>
                         </div>
                     </div>
                 </li>
@@ -133,14 +133,19 @@
                     <ul class="filter_sublist" id="city-options">
                         <li class="sub-item" data-region="north" data-city="taipei"><span>台北</span></li>
                         <li class="sub-item" data-region="north" data-city="hsinchu"><span>新竹</span></li>
-                        <li class="sub-item" data-region="central" data-city="taichung"><span>台中</span></li>
-                        <li class="sub-item" data-region="central" data-city="yunlin"><span>雲林</span></li>
+                        <li class="sub-item" data-region="central" data-city="taichung"><span>台中</span>
+                        </li>
+                        <li class="sub-item" data-region="central" data-city="yunlin"><span>雲林</span>
+                        </li>
                         <li class="sub-item" data-region="south" data-city="tainan"><span>台南</span></li>
-                        <li class="sub-item" data-region="south" data-city="kaoshuing"><span>高雄</span></li>
+                        <li class="sub-item" data-region="south" data-city="kaoshuing"><span>高雄</span>
+                        </li>
                     </ul>
                 </li>
             </ul>
         </div>
+
+
         <!-- 文章部分 -->
         <div class="main">
             <ul class="house" id="house-list">
@@ -257,9 +262,9 @@
         </div>
 
 
-        <!-- <div class="toTop">
+        <div class="toTop">
             <button id="top">Top↑</button>
-        </div> -->
+        </div>
 
 
         <div class="pagination">

@@ -31,23 +31,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Kaisei+Opti&display=swap"
         rel="stylesheet">
-    <!-- 英文字體 Zen Old -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+
     <!-- 中文副標&內文 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap" rel="stylesheet">
-    <!-- 漢堡選單 -->
+    <script src="./js/t.js"></script>
     <script>
-        $(document).ready(function () {
-            $('.hamburger').click(function () {
-                $(this).toggleClass('active')
+        $(function () {
+            $('#theText').t({
+                speed: 200,        // 毫秒
+                delay: 3,         // 秒
+                pause_on_click: true,
+                // 點按文字會暫停
             })
-
-        });
+        })
     </script>
+
 </head>
 
 <body>
@@ -58,39 +58,14 @@
     <div class="top">
         <a href="index.html"><img src="./pics/logo.svg" alt=""></a>
         <img src="./pics/Homepage cover.png" alt="">
-        <h1>Step into the past with old houses.</h1>
+        <h1 id="theText">穿越時光，<br>感受老房子的溫暖與記憶</h1>
+
         <ul>
             <li><a href="about.html">關於屋裡</a></li>
             <li><a href="explore.html">屋裡探索</a></li>
             <li><a href="houseStory.html">屋の故事</a></li>
             <li><a href="product.html">文創商品</a></li>
         </ul>
-    </div>
-
-    <div class="hamburger">
-        <div id="hamburgerMenu">
-            <div class="menu transition">
-                <div class="bar bar1 transition"></div>
-                <div class="bar bar2 transition"></div>
-                <div class="bar bar3 transition"></div>
-            </div>
-        </div>
-        <div class="ham-pull-menu">
-            <ul class="transition">
-                <a href="about.html">
-                    <li>關於屋裡</li>
-                </a>
-                <a href="explore.html">
-                    <li>屋裡探索</li>
-                </a>
-                <a href="houseStory.html">
-                    <li>屋の故事</li>
-                </a>
-                <a href="product.html">
-                    <li>文創商品</li>
-                </a>
-            </ul>
-        </div>
     </div>
 
     <div class="wrapper">
@@ -177,21 +152,21 @@
             <section class="pro">
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="product.html">
                             <img src="./pics/book (1).jpg" alt="">
                             <p>老屋時態</p>
                         </a>
                         <span>NT$486</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="product.html">
                             <img src="./pics/keychain (1).png" alt="">
                             <p>老招牌鑰匙圈</p>
                         </a>
                         <span>NT$120</span>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="product.html">
                             <img src="./pics/tape (2).png" alt="">
                             <p>鐵窗花 - 紙膠帶</p>
                         </a>

@@ -65,7 +65,8 @@ body {
 
 .ham-pull-menu a {
     text-decoration: none;
-    color: #A79277;
+    color: #FFF4E5;
+    -webkit-text-stroke: 1px #A79277;
     font-family: "Dela Gothic One", sans-serif;
 }
 
@@ -99,6 +100,8 @@ body {
     text-decoration: none;
     color: black;
     font-family: "Noto Serif TC", serif;
+    /* font-family: "Dela Gothic One", sans-serif; */
+
 }
 
 .bread li>a:hover {
@@ -229,6 +232,7 @@ section>p:nth-child(2) {
 
     .aboutA>img {
         margin-left: 0;
+        margin-right: 10px;
     }
 
     section>p:nth-child(1) {
@@ -267,6 +271,10 @@ section>p:nth-child(2) {
 
     .hamburger {
         display: block;
+    }
+
+    .ham-pull-menu li {
+        font-size: 20px;
     }
 
     section>p:nth-child(1) {

@@ -60,7 +60,8 @@ body {
 
 .ham-pull-menu a {
     text-decoration: none;
-    color: #A79277;
+    color: #FFF4E5;
+    -webkit-text-stroke: 1px #A79277;
     font-family: "Dela Gothic One", sans-serif;
 }
 
@@ -69,8 +70,7 @@ body {
 }
 
 .out p,
-.out span,
-.button button {
+.out span {
     font-family: "Noto Serif TC", serif;
 }
 
@@ -141,6 +141,7 @@ body {
     font-size: 14px;
     margin-right: 10px;
     cursor: pointer;
+    font-family: "Dela Gothic One", sans-serif;
 }
 
 button.selected {
@@ -161,6 +162,7 @@ button.selected {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* justify-content: left; */
     margin-bottom: 50px;
 }
 
@@ -186,7 +188,6 @@ button.selected {
 
 .content {
     position: relative;
-    /* 動畫效果 */
     transition-property: all;
     transition-duration: .5s;
 }
@@ -275,18 +276,13 @@ button.selected {
     }
 
     .button button {
-        width: auto;
         font-size: 16px;
         width: 8vw;
-        line-height: 4vh;
-    }
-
-    .pro a p {
-        height: 6vh;
+        line-height: 2.3vh;
     }
 
     .product {
-        justify-content: center;
+        justify-content: left;
         margin-bottom: 30px;
     }
 
@@ -302,6 +298,10 @@ button.selected {
 @media(max-width: 430px) {
     .hamburger {
         display: block;
+    }
+
+    .ham-pull-menu li {
+        font-size: 20px;
     }
 
     .title .border,
@@ -326,22 +326,28 @@ button.selected {
 
     .button button {
         font-size: 14px;
-        width: auto;
+        width: 19vw;
+        line-height: 4vh;
         margin-right: 5px;
         margin-top: 8px;
     }
 
     .product img {
-        width: 160px;
+        width: 150px;
     }
 
     .content {
-        width: 50%;
-        border: 1px solid black;
+        /* border: 1px solid black; */
+        box-sizing: border-box;
+        margin: 5px;
+        width: calc(100% / 2 - 10px);
     }
 
     .product {
-        justify-content: space-between;
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        /* 允許換行 */
     }
 
     .tag>p {
@@ -350,9 +356,28 @@ button.selected {
         padding: 3px;
     }
 
+    .price {
+        display: block;
+    }
+
     .pro a p {
-        height: auto;
-        /* border: 1px solid black; */
+        display: -webkit-box;
+        /* 使用彈性盒子模型 */
+        -webkit-box-orient: vertical;
+        /* 垂直排列子元素 */
+        -webkit-line-clamp: 2;
+        /* 設定顯示的最大行數 */
+        overflow: hidden;
+        /* 隱藏超出內容 */
+        text-overflow: ellipsis;
+        /* 顯示省略號 */
+        max-height: 3em;
+        /* 最大高度，應為行高的倍數 */
+        word-wrap: break-word;
+        /* 自動換行 */
+        white-space: normal;
+        /* 正常換行 */
+        margin-bottom: 5px;
     }
 
     #top {
@@ -360,4 +385,6 @@ button.selected {
         padding: 0 8px;
         bottom: 12%;
     }
+
+
 }

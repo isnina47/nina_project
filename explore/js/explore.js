@@ -1,3 +1,58 @@
+// 搜尋欄位
+document.addEventListener('DOMContentLoaded', function () {
+    const searchButton = document.getElementById('search-button');
+    const searchInput = document.getElementById('search-input');
+    const houseList = document.querySelectorAll('#house-list li');
+
+    function searchHouses() {
+        const searchTerm = searchInput.value.toLowerCase();
+
+        houseList.forEach(house => {
+            const region = house.getAttribute('data-region').toLowerCase();
+            const city = house.getAttribute('data-city').toLowerCase();
+            const title = house.querySelector('h2').textContent.toLowerCase();
+            const locaBtnParagraphs = house.querySelectorAll('.locaBtn p');
+            let content = '';
+
+            locaBtnParagraphs.forEach(p => {
+                content += p.textContent.toLowerCase() + ' ';
+            });
+
+            if (region.includes(searchTerm) || city.includes(searchTerm) || title.includes(searchTerm) || content.includes(searchTerm)) {
+                house.style.display = 'list-item';
+            } else {
+                house.style.display = 'none';
+            }
+        });
+    }
+
+    function resetHouses() {
+        houseList.forEach(house => {
+            house.style.display = 'list-item';
+        });
+    }
+
+    // 點擊搜尋按鈕觸發搜尋
+    searchButton.addEventListener('click', searchHouses);
+
+    // 按下ENTER鍵觸發搜尋
+    searchInput.addEventListener('keypress', function (event) {
+        if (event.key === 'Enter') {
+            searchHouses();
+        }
+    });
+
+    // 當搜尋欄位內容改變且為空時重置顯示
+    searchInput.addEventListener('input', function () {
+        if (searchInput.value.trim() === '') {
+            resetHouses();
+        }
+    });
+});
+
+
+
+// 篩選部分
 document.addEventListener('DOMContentLoaded', function () {
     // 在整個document(html)完全讀取和解析後就會被觸發，不需等待網頁資源讀取完成。
     const areaOptions = document.querySelectorAll('#area-options .sub-item');
@@ -9,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateCityOptions(region) {
         cityOptions.forEach(option => {
-            // 
+            //
             if (option.getAttribute('data-region') === region || region === null) {
                 option.style.display = 'list-item';
             } else {
@@ -86,3 +141,6 @@ document.addEventListener('DOMContentLoaded', function () {
     updateCityOptions(null);
     updateHouseList();
 });
+
+
+

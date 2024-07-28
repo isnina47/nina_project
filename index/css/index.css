@@ -8,14 +8,18 @@ body {
     position: relative;
 }
 
-/* 左下英文字 */
+/* 左下中文 */
 .top>h1 {
-    color: white;
-    font-size: 26px;
+    -webkit-text-stroke: .2px #E9e0ce;
+    font-weight: 900;
+    color: #2b3026;
+    font-size: 32px;
     position: absolute;
+    /* top: 50%; */
     bottom: 13%;
-    left: 4%;
-    font-family: "Zen Old Mincho", serif;
+    left: 3%;
+    /* font-family: "Noto Serif TC", serif; */
+    font-family: "Dela Gothic One", sans-serif;
 }
 
 
@@ -24,9 +28,8 @@ body {
     position: absolute;
     right: 5%;
     top: 5%;
-    font-size: 28px;
+    font-size: 32px;
     font-family: "Dela Gothic One", sans-serif;
-    font-weight: lighter;
 }
 
 .top li {
@@ -41,11 +44,13 @@ body {
 .top li a {
     text-decoration: none;
     list-style: none;
-    color: white;
+    color: #FFF4E5;
+    /* text border */
+    -webkit-text-stroke: 1px #A79277;
 }
 
 .top li a:hover {
-    border-bottom: 2px solid #A79277;
+    border-bottom: 2px solid #D1BB9E;
 }
 
 .top a img:nth-child(1) {
@@ -60,72 +65,11 @@ body {
     width: 100%;
 }
 
-/* 漢堡選單 */
-.hamburger {
-    display: none;
-}
-
-#hamburgerMenu {
-    position: absolute;
-    top: 5px;
-    right: 20px;
-}
-
-#hamburgerMenu .bar {
-    width: 36px;
-    height: 6px;
-    background-color: #FFF4E5;
-    margin: 6px auto;
-    border-radius: 2px;
-}
-
-.ham-pull-menu {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-}
-
-.transition {
-    transition: 0.8s;
-}
-
-.hamburger ul {
-    display: none;
-}
-
-.hamburger.active ul {
-    display: block;
-    background-color: rgba(239, 223, 195, 0.95);
-}
-
-.hamburger.active .bar1 {
-    transform: rotate(-45deg) translate(-9px, 7px);
-}
-
-.hamburger.active .bar2 {
-    opacity: 0;
-}
-
-.hamburger.active .bar3 {
-    transform: rotate(45deg) translate(-9px, -8px);
-}
-
-.ham-pull-menu li {
-    padding: 15px;
-}
-
-.ham-pull-menu a {
-    text-decoration: none;
-    color: #A79277;
-    font-family: "Dela Gothic One", sans-serif;
-}
-
 .wrapper {
     display: block;
     width: 100%;
     margin: 50px auto;
 }
-
 
 /* 副標&內容 */
 .wrapper p,
@@ -135,6 +79,7 @@ body {
 #top,
 .text {
     font-family: "Noto Serif TC", serif;
+
 }
 
 .wrapper h2,
@@ -143,6 +88,9 @@ body {
     font-size: 32px;
     font-weight: lighter;
     font-family: "Dela Gothic One", sans-serif;
+    color: #D1BB9E;
+    /* text border */
+    -webkit-text-stroke: 1.2px #A79277;
 }
 
 .wrapper ul,
@@ -151,10 +99,17 @@ body {
     text-decoration: none;
 }
 
+.aboutTitle a,
+.story a,
+.product .a a {
+    font-family: "Dela Gothic One", sans-serif;
+
+}
+
 .aboutTitle a:hover,
 .story a:hover,
 .product .a a:hover {
-    color: white;
+    color: #FFF4E5;
 }
 
 .about {
@@ -169,7 +124,7 @@ body {
 
 .aboutTitle a {
     color: black;
-    background-color: #D1BB9E;
+    background-color: #A79277;
     display: block;
     width: 100px;
     height: 32px;
@@ -184,12 +139,12 @@ body {
     display: block;
     width: 13%;
     margin: 70px auto 0 auto;
-    color: black;
+    color: #D1BB9E;
     font-size: 32px;
 }
 
 .title a:hover {
-    color: #A79277;
+    color: black;
 }
 
 /* 屋裡探索部分 */
@@ -363,6 +318,11 @@ body {
 
 .pro li {
     margin-left: 30px;
+    transition: transform 0.5s ease;
+}
+
+.pro li:hover {
+    transform: scale(1.05);
 }
 
 .a>a {
@@ -414,12 +374,18 @@ body {
 
     /* 英文字 */
     .top>h1 {
-        font-size: 22px;
-        left: 2%;
+        font-size: 28px;
+        left: 5%;
     }
 
     .top ul {
         top: 6%;
+        /* right: 8%; */
+    }
+
+    .top li {
+        border-bottom: 2px solid #D1BB9E;
+        margin-bottom: 35px;
     }
 
     /* 關於屋裡 */
@@ -497,23 +463,20 @@ body {
         left: 10px;
     }
 
-    /* 漢堡選單 */
-    .hamburger {
-        display: block;
-    }
-
     /* 右方選單 */
-    .top li {
-        /* margin-bottom: 15px;
-        font-size: 18px;
-        border-bottom: 2px solid #A79277; */
-        display: none;
+    .top ul {
+        right: 5%;
     }
 
-    /* 英文字 */
+    .top li {
+        margin-bottom: 20px;
+        font-size: 22px;
+        border-bottom: 2px solid #D1BB9E;
+    }
+
+    /* 中文打字機 */
     .top>h1 {
-        font-size: 10px;
-        font-weight: bold;
+        font-size: 16px;
     }
 
     .wrapper h2 {
