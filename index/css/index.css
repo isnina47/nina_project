@@ -383,7 +383,7 @@ body {
     }
 
     .top li {
-        border-bottom: 2px solid #D1BB9E;
+        /* border-bottom: 2px solid #D1BB9E; */
         margin-bottom: 35px;
     }
 
@@ -470,7 +470,7 @@ body {
     .top li {
         margin-bottom: 20px;
         font-size: 22px;
-        border-bottom: 2px solid #D1BB9E;
+        /* border-bottom: 2px solid #D1BB9E; */
     }
 
     /* 中文打字機 */
