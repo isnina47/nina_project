@@ -264,7 +264,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 90px 0;
+    margin: 65px 0;
 }
 
 .product>ul {
@@ -290,7 +290,7 @@ body {
 
 .productTitle p {
     color: #8F8F8F;
-    width: 200px;
+    width: 15vw;
     margin-top: 30px;
     line-height: 200%;
     text-align: justify;
@@ -324,6 +324,12 @@ body {
     transform: scale(1.05);
 }
 
+.a {
+    display: block;
+    text-align: center;
+    margin-left: 85%;
+}
+
 .a>a {
     color: black;
     background-color: #D1BB9E;
@@ -331,9 +337,8 @@ body {
     width: 100px;
     height: 32px;
     line-height: 30px;
-    text-align: center;
     border-radius: 40px;
-    margin-left: 590px;
+    /* margin-left: 590px; */
     margin-top: 20px;
 }
 
@@ -428,9 +433,15 @@ body {
         justify-content: space-evenly;
     }
 
+    .a {
+        margin-left: 83%;
+    }
+
     .a>a {
-        margin-left: 665px;
-        margin-top: 0px;
+        /* margin-left: 665px;
+        margin-top: 0px; */
+        display: block;
+        text-align: center;
     }
 
     .pro li {
@@ -560,20 +571,32 @@ body {
         margin-left: 40px;
     }
 
+    .product {
+        display: block;
+        text-align: center;
+        /* width: 55%;
+        margin-left: 86px; */
+    }
+
     .pro ul {
         display: block;
-        width: 55%;
-        margin-left: 86px;
+        /* margin: 0 auto; */
     }
 
     .pro li {
-        margin-left: 0px;
         /* border: #A79277 solid; */
-        margin: 20px 0;
+        margin: 20px auto;
+        width: 350px;
     }
 
     .pro span {
         font-size: 14px;
+        /* display: block;
+        width: 55%; */
+    }
+
+    .a {
+        margin-left: 20%;
     }
 
     .a>a {
@@ -582,7 +605,8 @@ body {
     }
 
     .pro p {
-        width: 50%;
+        /* display: block; */
+        /* width: 68%; */
     }
 
     #top {
