@@ -76,14 +76,13 @@ body {
     font-family: "Noto Serif TC", serif;
 }
 
-.sub-item span {
-    font-family: "Dela Gothic One", sans-serif;
-
+.sub-item span,
+.a a {
+    font-family: "Noto Serif TC", serif;
 }
 
 .a a {
-    font-family: "Dela Gothic One", sans-serif;
-
+    font-weight: bold;
 }
 
 .bread {

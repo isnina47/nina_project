@@ -85,11 +85,10 @@ body {
 .title>a {
     /* 所有標題&選單文字 */
     font-size: 32px;
-    font-weight: lighter;
-    font-family: "Dela Gothic One", sans-serif;
-    color: #D1BB9E;
-    /* text border */
-    -webkit-text-stroke: 1.2px #A79277;
+    font-weight: bold;
+    font-family: "Noto Serif TC", serif;
+    color: #000000;
+
 }
 
 .wrapper ul,
@@ -101,7 +100,7 @@ body {
 .aboutTitle a,
 .story a,
 .product .a a {
-    font-family: "Dela Gothic One", sans-serif;
+    font-weight: bold;
 
 }
 
@@ -138,12 +137,12 @@ body {
     display: block;
     width: 13%;
     margin: 70px auto 0 auto;
-    color: #D1BB9E;
+    /* color: #D1BB9E; */
     font-size: 32px;
 }
 
 .title a:hover {
-    color: black;
+    color: #D1BB9E;
 }
 
 /* 屋裡探索部分 */
